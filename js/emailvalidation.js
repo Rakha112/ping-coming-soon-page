@@ -18,6 +18,7 @@ tombol.addEventListener('click', e => {
             email.style.border = null;
             label.classList.remove("error")
             label.style.display = "none"
+            tombol.classList.remove("error_button")
         }
 })
 
