@@ -21,8 +21,9 @@
       <h1>We are launching <span>soon!</span></h1>
       <p>Subscribe and get notified</p>
     </div>
-    <form action="">
+    <form onkeypress="return event.keyCode != 13">
       <input type="text" name="email" id="email" placeholder="Your email address...">
+      <label for="email" style="display: none;" >Please provide a valid email address</label>
       <button type="submit">Notify Me</button>
     </form>
     <div class="gambar">
@@ -30,9 +31,9 @@
     </div>
     <div class="foot">
       <div class="social_media">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-instagram"></a>
+        <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
       </div>
       <p>&copy; Copyright Ping. All rights reserved.</p>
     </div>
@@ -52,5 +53,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer> -->
+  <script src="js/emailvalidation.js"></script>
 </body>
 </html>

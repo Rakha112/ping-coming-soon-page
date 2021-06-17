@@ -8,116 +8,274 @@
 }
 
 body {
+ 
     font-size: 20px;
     font-family: 'Libre Franklin', sans-serif;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    margin: 0 54px;
-    .logo {
-        margin-top: 9.375rem;
-        img {
-            width: 6.75rem;
-            height: 1.875rem;
+
+
+@media screen and (min-width: 750px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0 54px;
+        .logo {
+            margin-top: 10.625rem;
+            img {
+                width: 6.75rem;
+                height: auto;
+            }
         }
-    }
-    .head {
-        text-align: center;
-        h1 {
-            margin-top: 5rem;
-            color: $Gray;
-            font-weight: 300;
-            font-size: 2.75rem;
+        .head {
+            text-align: center;
+            h1 {
+                margin-top: 4.375rem;
+                color: $Gray;
+                font-weight: 300;
+                font-size: 2.75rem;
+            }
+            span {
+                color: $Very_Dark_Blue;
+                font-weight: 700;
+            }
+            p {
+                font-size: 1.5rem;
+                margin-top: 2.5rem;
+                color: $Very_Dark_Blue;
+            }
         }
-        span {
-            color: $Very_Dark_Blue;
-            font-weight: 700;
-        }
-        p {
-            font-size: 1.5rem;
-            margin-top: 2.5rem;
-            color: $Very_Dark_Blue;
-        }
-    }
-    form {
-        font-family: 'Libre Franklin', sans-serif;
-        width: 100%;
-        padding: 0 40px;
-        input[type=text] {
-            color: $Pale_Blue;
-            border-radius: 40px;
-            width: 100%;
-            padding: 25.5px 0;
-            padding-left: 4.0625rem;
-            border: 1px solid $Pale_Blue;
-            font-size: 1.5rem;
-            margin-bottom: 1.25rem;
-            margin-top: 4rem;
-        }
-        input:focus {
-            outline:none;
-        }
-        button {
-            letter-spacing: 1.3;
-            font-weight: 600;
+        
+        form {
             font-family: 'Libre Franklin', sans-serif;
-            color: white;
-            background-color: $Blue;
-            font-size: 1.5rem;
-            outline: none;
-            border-radius: 40px;
-            padding: 25.5px 0;
             width: 100%;
-            outline: 0 !important;
-            border: none;
-            margin-bottom: 8.75rem;
+            padding: 0 40px;
+            input[type=text] {
+                color: $Pale_Blue;
+                border-radius: 40px;
+                width: 100%;
+                padding: 25.5px 0;
+                padding-left: 4.0625rem;
+                border: 1px solid $Pale_Blue;
+                font-size: 1.5rem;
+                margin-bottom: 1.25rem;
+                margin-top: 4rem;
+            }
+            input:focus {
+                outline:none;
+            }
+            
+            .error {
+                font-family: 'Libre Franklin', sans-serif;
+                margin-top: -10px;
+                text-align: center;
+                font-style: italic;
+                color: $Light_Red;
+            }
+            button {
+                cursor: pointer;
+                box-shadow: 0px 20px 20px hsla(223, 87%, 63%, 0.3);
+                letter-spacing: 1.3;
+                font-weight: 600;
+                font-family: 'Libre Franklin', sans-serif;
+                color: white;
+                background-color: $Blue;
+                font-size: 1.5rem;
+                outline: none;
+                border-radius: 40px;
+                padding: 25.5px 0;
+                width: 100%;
+                outline: 0 !important;
+                border: none;
+                margin-bottom: 8.5rem;
+                transition: 0.3s all ease;
+            }
+            button:focus {
+                outline:none;
+            }
+            button:hover {
+                background-color: hsl(223, 89%, 72%);
+            }
+            .error_button {
+                transform: translateY(50px);
+            }
         }
-        button:focus {
-            outline:none;
+        .gambar {
+            img {
+                width: 100%;
+            }
         }
-    }
-    .gambar {
-        img {
-            width: 100%;
-        }
-    }
-    .foot {
-        margin-top: 15rem;
-        .social_media {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .fa {
+        .foot {
+            margin-top: 14rem;
+            .social_media {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                border-radius: 50%;
-                border: 1px solid $Pale_Blue;
-                width: 60px;
-                height: 60px;
-                text-decoration: none;
-                color: $Blue;
-                transition: 0.3s all ease;
+                .fa {
+                    font-size: 1.875rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    border: 1px solid $Pale_Blue;
+                    width: 60px;
+                    height: 60px;
+                    text-decoration: none;
+                    color: $Blue;
+                    transition: 0.3s all ease;
+                }
+                .fa:hover {
+                    color: white;
+                    background-color: $Blue;
+                    border: 1px solid $Blue;
+                }
+                .fa-twitter {
+                    margin-left: 25px;
+                    margin-right: 25px;
+                }
             }
-            .fa:hover {
+            p {
+                margin-top: 3.625rem;
+                color: $Gray;
+                // margin-bottom: 4.375rem;
+            }
+        }    
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0 20px;
+        .logo {
+            margin-top: 5rem;
+            img {
+                width: 5rem;
+                height: auto;
+            }
+        }
+        .head {
+            text-align: center;
+            h1 {
+                margin-top: 3rem;
+                color: $Gray;
+                font-weight: 300;
+                font-size: 1.75rem;
+            }
+            span {
+                color: $Very_Dark_Blue;
+                font-weight: 700;
+            }
+            p {
+                font-size: 1rem;
+                margin-top: 1rem;
+                color: $Very_Dark_Blue;
+            }
+        }
+        
+        form {
+            font-family: 'Libre Franklin', sans-serif;
+            width: 100%;
+            padding: 0;
+            input[type=text] {
+                color: $Pale_Blue;
+                border-radius: 40px;
+                width: 100%;
+                padding: 0.875rem 0;
+                padding-left: 2rem;
+                border: 1px solid $Pale_Blue;
+                font-size: 1rem;
+                margin-bottom: 1.25rem;
+                margin-top: 4rem;
+            }
+            input:focus {
+                outline:none;
+            }
+            
+            .error {
+                font-family: 'Libre Franklin', sans-serif;
+                font-size: .875rem;
+                margin-top: -10px;
+                text-align: center;
+                font-style: italic;
+                color: $Light_Red;
+            }
+            button {
+                cursor: pointer;
+                box-shadow: 0px 20px 20px hsla(223, 87%, 63%, 0.3);
+                letter-spacing: 1.3;
+                font-weight: 600;
+                font-family: 'Libre Franklin', sans-serif;
                 color: white;
                 background-color: $Blue;
-                border: 1px solid $Blue;
+                font-size: 1rem;
+                outline: none;
+                border-radius: 40px;
+                padding: .875rem 0;
+                width: 100%;
+                outline: 0 !important;
+                border: none;
+                margin-bottom: 5rem;
+                transition: 0.3s all ease;
             }
-            .fa-twitter {
-                margin-left: 25px;
-                margin-right: 25px;
+            button:focus {
+                outline:none;
+            }
+            button:hover {
+                background-color: hsl(223, 89%, 72%);
+            }
+            .error_button {
+                transform: translateY(1rem);
             }
         }
-        p {
-            margin-top: 3.625rem;
-            color: $Gray;
-            margin-bottom: 4.375rem;
+        .gambar {
+            img {
+                width: 100%;
+            }
         }
-    }    
+        .foot {
+            margin-top: 8rem;
+            .social_media {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .fa {
+                    font-size: .8755rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    border: 1px solid $Pale_Blue;
+                    width: 40px;
+                    height: 40px;
+                    text-decoration: none;
+                    color: $Blue;
+                    transition: 0.3s all ease;
+                }
+                .fa:hover {
+                    color: white;
+                    background-color: $Blue;
+                    border: 1px solid $Blue;
+                }
+                .fa-twitter {
+                    margin-left: 25px;
+                    margin-right: 25px;
+                }
+            }
+            p {
+                margin-top: 2rem;
+                color: $Gray;
+                font-size: 1rem;
+                margin-bottom: 4rem;
+            }
+        }    
+    }
+    
 }

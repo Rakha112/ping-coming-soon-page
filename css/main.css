@@ -10,151 +10,302 @@ body {
   font-family: 'Libre Franklin', sans-serif;
 }
 
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-height: 100vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 54px;
+@media screen and (min-width: 750px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 100vh;
+    margin: 0 54px;
+  }
+  .container .logo {
+    margin-top: 10.625rem;
+  }
+  .container .logo img {
+    width: 6.75rem;
+    height: auto;
+  }
+  .container .head {
+    text-align: center;
+  }
+  .container .head h1 {
+    margin-top: 4.375rem;
+    color: #969696;
+    font-weight: 300;
+    font-size: 2.75rem;
+  }
+  .container .head span {
+    color: #151f29;
+    font-weight: 700;
+  }
+  .container .head p {
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    color: #151f29;
+  }
+  .container form {
+    font-family: 'Libre Franklin', sans-serif;
+    width: 100%;
+    padding: 0 40px;
+  }
+  .container form input[type=text] {
+    color: #c2d3ff;
+    border-radius: 40px;
+    width: 100%;
+    padding: 25.5px 0;
+    padding-left: 4.0625rem;
+    border: 1px solid #c2d3ff;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    margin-top: 4rem;
+  }
+  .container form input:focus {
+    outline: none;
+  }
+  .container form .error {
+    font-family: 'Libre Franklin', sans-serif;
+    margin-top: -10px;
+    text-align: center;
+    font-style: italic;
+    color: #ff5263;
+  }
+  .container form button {
+    cursor: pointer;
+    -webkit-box-shadow: 0px 20px 20px rgba(79, 125, 243, 0.3);
+            box-shadow: 0px 20px 20px rgba(79, 125, 243, 0.3);
+    letter-spacing: 1.3;
+    font-weight: 600;
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    background-color: #4f7df3;
+    font-size: 1.5rem;
+    outline: none;
+    border-radius: 40px;
+    padding: 25.5px 0;
+    width: 100%;
+    outline: 0 !important;
+    border: none;
+    margin-bottom: 8.5rem;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .container form button:focus {
+    outline: none;
+  }
+  .container form button:hover {
+    background-color: #789cf7;
+  }
+  .container form .error_button {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  .container .gambar img {
+    width: 100%;
+  }
+  .container .foot {
+    margin-top: 14rem;
+  }
+  .container .foot .social_media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .foot .social_media .fa {
+    font-size: 1.875rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 50%;
+    border: 1px solid #c2d3ff;
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    color: #4f7df3;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .container .foot .social_media .fa:hover {
+    color: white;
+    background-color: #4f7df3;
+    border: 1px solid #4f7df3;
+  }
+  .container .foot .social_media .fa-twitter {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .container .foot p {
+    margin-top: 3.625rem;
+    color: #969696;
+  }
 }
 
-.container .logo {
-  margin-top: 9.375rem;
-}
-
-.container .logo img {
-  width: 6.75rem;
-  height: 1.875rem;
-}
-
-.container .head {
-  text-align: center;
-}
-
-.container .head h1 {
-  margin-top: 5rem;
-  color: #969696;
-  font-weight: 300;
-  font-size: 2.75rem;
-}
-
-.container .head span {
-  color: #151f29;
-  font-weight: 700;
-}
-
-.container .head p {
-  font-size: 1.5rem;
-  margin-top: 2.5rem;
-  color: #151f29;
-}
-
-.container form {
-  font-family: 'Libre Franklin', sans-serif;
-  width: 100%;
-  padding: 0 40px;
-}
-
-.container form input[type=text] {
-  color: #c2d3ff;
-  border-radius: 40px;
-  width: 100%;
-  padding: 25.5px 0;
-  padding-left: 4.0625rem;
-  border: 1px solid #c2d3ff;
-  font-size: 1.5rem;
-  margin-bottom: 1.25rem;
-  margin-top: 4rem;
-}
-
-.container form input:focus {
-  outline: none;
-}
-
-.container form button {
-  letter-spacing: 1.3;
-  font-weight: 600;
-  font-family: 'Libre Franklin', sans-serif;
-  color: white;
-  background-color: #4f7df3;
-  font-size: 1.5rem;
-  outline: none;
-  border-radius: 40px;
-  padding: 25.5px 0;
-  width: 100%;
-  outline: 0 !important;
-  border: none;
-  margin-bottom: 8.75rem;
-}
-
-.container form button:focus {
-  outline: none;
-}
-
-.container .gambar img {
-  width: 100%;
-}
-
-.container .foot {
-  margin-top: 15rem;
-}
-
-.container .foot .social_media {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.container .foot .social_media .fa {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 50%;
-  border: 1px solid #c2d3ff;
-  width: 60px;
-  height: 60px;
-  text-decoration: none;
-  color: #4f7df3;
-  -webkit-transition: 0.3s all ease;
-  transition: 0.3s all ease;
-}
-
-.container .foot .social_media .fa:hover {
-  color: white;
-  background-color: #4f7df3;
-  border: 1px solid #4f7df3;
-}
-
-.container .foot .social_media .fa-twitter {
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
-.container .foot p {
-  margin-top: 3.625rem;
-  color: #969696;
-  margin-bottom: 4.375rem;
+@media screen and (min-width: 375px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 100vh;
+    margin: 0 20px;
+  }
+  .container .logo {
+    margin-top: 5rem;
+  }
+  .container .logo img {
+    width: 5rem;
+    height: auto;
+  }
+  .container .head {
+    text-align: center;
+  }
+  .container .head h1 {
+    margin-top: 3rem;
+    color: #969696;
+    font-weight: 300;
+    font-size: 1.75rem;
+  }
+  .container .head span {
+    color: #151f29;
+    font-weight: 700;
+  }
+  .container .head p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #151f29;
+  }
+  .container form {
+    font-family: 'Libre Franklin', sans-serif;
+    width: 100%;
+    padding: 0;
+  }
+  .container form input[type=text] {
+    color: #c2d3ff;
+    border-radius: 40px;
+    width: 100%;
+    padding: 0.875rem 0;
+    padding-left: 2rem;
+    border: 1px solid #c2d3ff;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+    margin-top: 4rem;
+  }
+  .container form input:focus {
+    outline: none;
+  }
+  .container form .error {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: .875rem;
+    margin-top: -10px;
+    text-align: center;
+    font-style: italic;
+    color: #ff5263;
+  }
+  .container form button {
+    cursor: pointer;
+    -webkit-box-shadow: 0px 20px 20px rgba(79, 125, 243, 0.3);
+            box-shadow: 0px 20px 20px rgba(79, 125, 243, 0.3);
+    letter-spacing: 1.3;
+    font-weight: 600;
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    background-color: #4f7df3;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 40px;
+    padding: .875rem 0;
+    width: 100%;
+    outline: 0 !important;
+    border: none;
+    margin-bottom: 5rem;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .container form button:focus {
+    outline: none;
+  }
+  .container form button:hover {
+    background-color: #789cf7;
+  }
+  .container form .error_button {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+  .container .gambar img {
+    width: 100%;
+  }
+  .container .foot {
+    margin-top: 8rem;
+  }
+  .container .foot .social_media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .foot .social_media .fa {
+    font-size: .8755rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 50%;
+    border: 1px solid #c2d3ff;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    color: #4f7df3;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .container .foot .social_media .fa:hover {
+    color: white;
+    background-color: #4f7df3;
+    border: 1px solid #4f7df3;
+  }
+  .container .foot .social_media .fa-twitter {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .container .foot p {
+    margin-top: 2rem;
+    color: #969696;
+    font-size: 1rem;
+    margin-bottom: 4rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
